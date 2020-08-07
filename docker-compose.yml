@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  latex:
+    build: .
+    volumes:
+      - .:/home/latex
+    working_dir: /home/latex

@@ -1,0 +1,27 @@
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{lstfiracode}
+\setCJKmainfont{ipaexm.ttf}
+\setmonofont{Fira Code}
+\usepackage[most]{tcolorbox}
+\usepackage[framemethod=tikz]{mdframed}
+
+\definecolor{gh-gray}{rgb}{0.937,0.941,0.945}
+\lstset{
+  language=C,
+  style=FiraCodeStyle,
+  basicstyle=\setlength{\lineskip}{0pt}\ttfamily\footnotesize,
+  commentstyle=\rmfamily\itshape\color{gray},
+  aboveskip=1.5em,
+  belowskip=1em,
+  }
+
+\mdfsetup{skipabove=1.5em,skipbelow=1em}
+
+\surroundwithmdframed[
+roundcorner=3pt,
+hidealllines=true,
+backgroundcolor=gh-gray,
+innerleftmargin=15pt,
+innertopmargin=0pt,
+innerbottommargin=0pt]{lstlisting}
